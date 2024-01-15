@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greendem | Product</title>
     <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.18/dist/tailwind.min.css">
+
 </head>
 <body>
     <!-- navbar -->
@@ -18,90 +20,102 @@
             <li><a  class="hover:text-black" href="contact.html">contact</a></li>
         </ul>
         
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-6 h-6 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
           
     </nav>
 
+      <!-- Side navbar -->
+      <section id="sidenav" class="bg-green-200 fixed z-20 right-0 top-0 transition-all duration-1000" style="width:50%; height:100%; right:-50%">
+        <div class="text-right mr-5 mt-5">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+        </div>  
+        <ul class="flex flex-col gap-10 text-center mt-10 text-gray-600 ">
+            <li><a class="hover:text-black" href="./index.html">Home</a></li>
+            <li><a  class="hover:text-black" href="./product.html">Product</a></li>
+            <li><a  class="hover:text-black" href="contact.html">contact</a></li>
+        </ul>
+    </section>
+
 
     <!-- product  -->
     <div class="text-center">
         <h1 class="text-2xl font-bold text-center mt-5">Our Products</h1>
-        <input type="text" placeholder="Search for a product" style="width: 80%;" class="inline p-3 mt-5  border border-black">
+        <input type="text" id="search-box" placeholder="Search for a product" style="width: 80%;" class="inline p-3 mt-5  border border-black">
      
      
-        <div class="grid grid-cols-2 text-center md:grid-cols-4">
+        <div class="grid grid-cols-2 text-center md:grid-cols-4" id="product-container">
         
         <div>
             <img src="./assets/image/pot-5.png" class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5"  alt="">
-            <p>Gardinald</p>
+            <h1>Gardinald</h1>
             <p class="font-semibold">$25/-</p>
         </div>
 
         <div>
             <img src="./assets/image/pot-6.png"  class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5"  alt="">
-            <p>Rose-sunflow</p>
+            <h1>Rose-sunflow</h1>
             <p  class="font-semibold">$15/-</p>
         </div>
 
         <div>
             <img src="./assets/image/pot-7.png"  class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5"  alt="">
-            <p>Snaeguard</p>
+            <h1>Snaeguard</h1>
             <p  class="font-semibold">$18/-</p>
         </div>
 
         <div>
             <img src="./assets/image/pot-8.png"  class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5" alt="">
-            <p>Mariegold</p>
+            <h1>Mariegold</h1>
             <p  class="font-semibold">$25/-</p>
         </div>
 
         <div>
             <img src="./assets/image/pot-9.png"  class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5" alt="">
-            <p>Lilatica</p>
+            <h1>Lilatica</h1>
             <p  class="font-semibold">$20/-</p>
         </div>
 
         <div>
             <img src="./assets/image/pot-10.png"  class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5" alt="">
-            <p>Hibscus</p>
+            <h1>Hibscus</h1>
             <p  class="font-semibold">$14/-</p>
         </div>
 
         <div>
             <img src="./assets/image/pot-11.png" class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5"  alt="">
-            <p>Jasmine</p>
+            <h1>Jasmine</h1>
             <p  class="font-semibold">$18/-</p>
         </div>
 
         <div>
             <img src="./assets/image/pot-12.png" class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5"  alt="">
-            <p>Big Jasmine</p>
+            <h1>Big Jasmine</h1>
             <p  class="font-semibold">$23/-</p>
         </div>
 
         <div>
             <img src="./assets/image/pot-13.png" class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5"  alt="">
-            <p>Paneer Rose</p>
+            <h1>Paneer Rose</h1>
             <p  class="font-semibold">$17/-</p>
         </div>
 
         <div>
             <img src="./assets/image/pot-14.png" class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5"  alt="">
-            <p>Green Flowewr</p>
+            <h1>Green Flowewr</h1>
             <p  class="font-semibold">$27/-</p>
         </div>
 
          <div>
             <img src="./assets/image/pot-1.png"  class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5" alt="">
-            <p>Orange Rose</p>
+            <h1>Orange Rose</h1>
             <p  class="font-semibold">$17/-</p>
         </div>
 
         <div>
             <img src="./assets/image/pot-2.png"  class="inline hover:shadow-xl transform hover:-translate-y-2 mt-5" alt="">
-            <p>Red sunflower</p>
+            <h1>Red sunflower</h1>
             <p  class="font-semibold" >$27/-</p>
         </div>
       </div>
@@ -115,5 +129,8 @@
         <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, possimus?</p>
         <p class="my-3">@2023 grrendem.com</p>
     </div>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/product.js"></script>
 </body>
 </html>
